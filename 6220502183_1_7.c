@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<string.h>
+#include<math.h>
+
 int main()
 {
     float time;
@@ -22,7 +24,7 @@ int main()
         time=12;
     }
     a=time;
-    b=(time-a)*100; 
+    b=round((time-a)*100); 
     printf("%d:%d %s",a,b,z);
     return 0;
 }
