@@ -3,25 +3,26 @@
 int main()
 {
     float time;
-    char z[];
+    int a,b;
+    char z[10];
 
     scanf ("%f",&time);
-
+    
     if (time<12)
     {
-         strcpy(z,"a.m.");
-        //printf("%.2f a.m.",time);
+        strcpy(z,"a.m.");  
     }
     else
     {
         strcpy(z,"p.m.");
         time=time-12;
-        //printf("%.2f p.m.",time);
     }
     if (time==0)
     {
         time=12;
     }
-    
+    a=time;
+    b=(time-a)*100; 
+    printf("%d:%d %s",a,b,z);
     return 0;
 }
