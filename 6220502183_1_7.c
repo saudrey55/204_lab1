@@ -24,7 +24,7 @@ int main()
         time=12;
     }
     a=time;
-    b=round((time-a)*100); 
+    b=(time-a)*100; 
     printf("%d:%d %s",a,b,z);
     return 0;
 }
